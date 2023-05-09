@@ -4,7 +4,6 @@ using FlappyBirdClone.Player;
 using FlappyBirdClone.Settings;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 namespace FlappyBirdClone
 {
