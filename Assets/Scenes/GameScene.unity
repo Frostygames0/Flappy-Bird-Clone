@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a6892d791c47b49911a6b5ff695eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crashable: {fileID: 175499644}
+  _bird: {fileID: 175499644}
   _jumpMovement: {fileID: 175499643}
   _score: {fileID: 1230643713}
   _constantMovingObjectSpawner: {fileID: 1381771312}

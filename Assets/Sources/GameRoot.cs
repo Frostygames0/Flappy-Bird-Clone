@@ -10,7 +10,7 @@ namespace FlappyBirdClone
     public class GameRoot : MonoBehaviour
     {
         [Header("Player")]
-        [SerializeField] private Bird _crashable;
+        [SerializeField] private Bird _bird;
         [SerializeField] private JumpMovement _jumpMovement;
         [SerializeField] private Score _score;
         
@@ -54,15 +54,15 @@ namespace FlappyBirdClone
         private void OnEnable()
         {
             _constantMovingObjectSpawner.StartSpawn();
-            _crashable.Crashed += OnCrashed;
-            _crashable.Passed += OnPassed;
+            _bird.Crashed += OnCrashed;
+            _bird.Passed += OnPassed;
         }
 
         private void OnDisable()
         {
             _constantMovingObjectSpawner.StopSpawn();
-            _crashable.Crashed -= OnCrashed;
-            _crashable.Passed -= OnPassed;
+            _bird.Crashed -= OnCrashed;
+            _bird.Passed -= OnPassed;
         }
         
         // TODO Implement proper losing sequence
