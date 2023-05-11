@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 84c4e2df5100bc742a27c8239012868d
+guid: e228b489c92707841ad367213fb94b4a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bird
+      name: pipe_top
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 33
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,29 +142,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70274a4311c2e8543a30c5b816bfbc50
-      internalID: 349306252
+      spriteID: 4a08bfd9d3201b24ab935f09e45ed8cf
+      internalID: 1496969837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bird_wing
+      name: pipe_section
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 9
-      pivot: {x: 0.48, y: 0.41}
+        x: 0
+        y: 1
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a49430e889e0d39479977d80d268696c
-      internalID: 1758857964
+      spriteID: 7837fd2cf2958654a9e5e7eb5f296c96
+      internalID: -1697969261
       vertices: []
       indices: 
       edges: []
@@ -180,8 +180,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bird: 349306252
-      bird_wing: 1758857964
+      pipe_section: -1697969261
+      pipe_top: 1496969837
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

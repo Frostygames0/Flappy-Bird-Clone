@@ -5,14 +5,14 @@ namespace FlappyBirdClone.Player
 {
     public class Score : MonoBehaviour
     {
-        private int _score;
+        public int Total { get; private set; }
 
         public event Action<int> Changed;
 
         public void Increase()
         {
-            _score += 1;
-            Changed?.Invoke(_score);
+            Total += 1;
+            Changed?.Invoke(Total);
         }
     }
 }
