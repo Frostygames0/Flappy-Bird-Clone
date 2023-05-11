@@ -6,9 +6,6 @@ namespace FlappyBirdClone.Player
     {
         [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private float _jumpHeight;
-
-        public void Init(float jumpHeight)
-            => _jumpHeight = jumpHeight;
         
         public void Jump()
         {
