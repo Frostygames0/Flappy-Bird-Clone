@@ -3,7 +3,6 @@ using FlappyBirdClone.Player;
 using FlappyBirdClone.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 namespace FlappyBirdClone
 {
@@ -32,12 +31,10 @@ namespace FlappyBirdClone
         private void OnCrashed()
         {
             _scoreView.Hide();
-            
             _pipeSpawner.StopSpawn();
-            _bird.Kill();
-            
+
             _losingMessageView.Show(_score.Total, 
-                () => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex));
+                () => SceneManager.LoadScene(SceneConstants.StartScene));
         }
         
         private void OnPassed()

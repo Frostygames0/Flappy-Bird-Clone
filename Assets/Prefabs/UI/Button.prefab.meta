@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/UI/Button.prefab.meta
 guid: c2e5e322cf8695c4593d97dab45da373
+========
+guid: 15a60a552830a8b43bb03f924ed61aa4
+>>>>>>>> origin/master:Assets/Prefabs/Obstacles/Pipe.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

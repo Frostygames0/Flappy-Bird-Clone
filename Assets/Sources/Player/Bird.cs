@@ -9,13 +9,10 @@ namespace FlappyBirdClone.Player
         public event Action Crashed;
         public event Action Passed;
 
-        public void Kill()
-            => gameObject.SetActive(false);
-
-        private void OnCollisionEnter2D(Collision2D col)
+        public void Crash()
         {
-            if (col.collider.TryGetComponent<Obstacle>(out _))
-                Crashed?.Invoke();
+            gameObject.SetActive(false);
+            Crashed?.Invoke();
         }
 
         private void OnTriggerEnter2D(Collider2D col)

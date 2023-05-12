@@ -27,7 +27,7 @@ namespace FlappyBirdClone.Input
         {
             if (!context.performed) 
                 return;
-            
+
             _jumpMovement.Jump();
             _jumpAnimator.PerformJumpAnimation();
         }

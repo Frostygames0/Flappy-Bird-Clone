@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/GameScene.meta
 guid: d73d1ae45a476c44c933c0159d8c290a
 folderAsset: yes
 DefaultImporter:
+========
+guid: 552b84fdb6abd6b4299e0183378b2109
+PrefabImporter:
+>>>>>>>> origin/master:Assets/Prefabs/Models/Long Pipe Model.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
