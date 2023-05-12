@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace FlappyBirdClone.UI
 {
-    public class LosingMessageView : SwitchableView
+    public class LosingMessageView : MonoBehaviour
     {
         [SerializeField] private TMP_Text _score;
         [SerializeField] private Button _restartButton;

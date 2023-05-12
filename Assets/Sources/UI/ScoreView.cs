@@ -4,10 +4,16 @@ using UnityEngine;
 
 namespace FlappyBirdClone.Player
 {
-    public class ScoreView : SwitchableView
+    public class ScoreView : MonoBehaviour
     {
         [SerializeField] private Score _score;
         [SerializeField] private TMP_Text _text;
+
+        public void Show()
+            => gameObject.SetActive(true);
+
+        public void Hide()
+            => gameObject.SetActive(false);
 
         private void OnEnable()
             => _score.Changed += OnChanged;

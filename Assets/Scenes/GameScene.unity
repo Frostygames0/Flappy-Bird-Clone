@@ -949,6 +949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bird: {fileID: 175499644}
+  _jumpMovement: {fileID: 0}
   _score: {fileID: 1230643713}
   _pipeSpawner: {fileID: 1381771312}
   _scoreView: {fileID: 1630037872}
@@ -1372,7 +1373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 35990437201398359, guid: 7ab8612ec99771b4ea3cb200e813cedd, type: 3}
       propertyPath: m_text
-      value: Restart
+      value: Back
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ab8612ec99771b4ea3cb200e813cedd, type: 3}
