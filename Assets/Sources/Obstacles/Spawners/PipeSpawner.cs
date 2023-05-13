@@ -14,14 +14,13 @@ namespace FlappyBirdClone.Obstacles.Spawners
         [SerializeField] private float _maxHeight;
         [SerializeField] private float _spawnInterval;
 
-        private IEnumerator _continuousSpawnRoutine;
-
+        private Coroutine _continuousSpawnRoutine;
+        
         public void StartSpawn()
         {
-            _continuousSpawnRoutine = ContinuouslySpawn();
-            StartCoroutine(_continuousSpawnRoutine);
+            _continuousSpawnRoutine = StartCoroutine(ContinuouslySpawn());
         }
-
+        
         public void StopSpawn()
         {
             if(_continuousSpawnRoutine != null)

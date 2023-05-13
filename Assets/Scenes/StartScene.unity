@@ -251,6 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438345931}
   - component: {fileID: 438345933}
+  - component: {fileID: 438345934}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -325,6 +326,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &438345934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438345930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1552327d0adc4b47ad2957fd36e1fd80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 438345933}
+  _movement: {x: 1, y: 0}
+  _speed: 5
 --- !u!1 &589010998
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 932946993}
   - component: {fileID: 932946994}
+  - component: {fileID: 932946995}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -443,6 +460,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &932946995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932946992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1552327d0adc4b47ad2957fd36e1fd80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 932946994}
+  _movement: {x: 1, y: 0}
+  _speed: 0.5
 --- !u!1 &1079579474
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,7 +791,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 400, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -927,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7821432053536126127, guid: c2e5e322cf8695c4593d97dab45da373, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 7821432053536126127, guid: c2e5e322cf8695c4593d97dab45da373, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -32,9 +32,16 @@ namespace FlappyBirdClone
         {
             _scoreView.Hide();
             _pipeSpawner.StopSpawn();
-
-            _losingMessageView.Show(_score.Total, 
-                () => SceneManager.LoadScene(SceneConstants.StartScene));
+            
+            _losingMessageView.Show(_score.Total,
+                () =>
+                {
+#if UNITY_EDITOR
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+#else
+                    SceneManager.LoadScene(SceneConstants.StartScene);
+#endif
+                });
         }
         
         private void OnPassed()
