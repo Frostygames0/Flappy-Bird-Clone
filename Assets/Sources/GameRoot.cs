@@ -17,9 +17,10 @@ namespace FlappyBirdClone
 
         private void OnEnable()
         {
-            _pipeSpawner.StartSpawn();
             _bird.Crashed += OnCrashed;
             _bird.Passed += OnPassed;
+            
+            _pipeSpawner.StartSpawn();
         }
 
         private void OnDisable()

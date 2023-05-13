@@ -6,9 +6,8 @@ namespace FlappyBirdClone.Input
 {
     public class PlayerInput : MonoBehaviour, PlayerActions.IBirdActions
     {
-        [SerializeField] private JumpMovement _jumpMovement;
-        [SerializeField] private JumpAnimator _jumpAnimator;
-        
+        [SerializeField] private BirdMovement _birdMovement;
+
         private PlayerActions _actions;
 
         private void Awake()
@@ -23,13 +22,12 @@ namespace FlappyBirdClone.Input
         private void OnDisable()
             => _actions.Disable();
 
-        public void OnJump(InputAction.CallbackContext context)
+        public void OnFlap(InputAction.CallbackContext context)
         {
             if (!context.performed) 
                 return;
 
-            _jumpMovement.Jump();
-            _jumpAnimator.PerformJumpAnimation();
+            _birdMovement.Flap();
         }
     }
 }

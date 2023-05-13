@@ -30,7 +30,7 @@ namespace FlappyBirdClone.Input
             ""id"": ""b5432db3-13b2-4d42-bbc4-8cf7ac08a5c9"",
             ""actions"": [
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""Flap"",
                     ""type"": ""Button"",
                     ""id"": ""15d2ea6f-24a0-4d76-9ea2-09967d8a4374"",
                     ""expectedControlType"": ""Button"",
@@ -47,7 +47,7 @@ namespace FlappyBirdClone.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Flap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -58,7 +58,7 @@ namespace FlappyBirdClone.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Flap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -69,7 +69,7 @@ namespace FlappyBirdClone.Input
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Jump"",
+                    ""action"": ""Flap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -596,7 +596,7 @@ namespace FlappyBirdClone.Input
 }");
             // Bird
             m_Bird = asset.FindActionMap("Bird", throwIfNotFound: true);
-            m_Bird_Jump = m_Bird.FindAction("Jump", throwIfNotFound: true);
+            m_Bird_Flap = m_Bird.FindAction("Flap", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -668,12 +668,12 @@ namespace FlappyBirdClone.Input
         // Bird
         private readonly InputActionMap m_Bird;
         private IBirdActions m_BirdActionsCallbackInterface;
-        private readonly InputAction m_Bird_Jump;
+        private readonly InputAction m_Bird_Flap;
         public struct BirdActions
         {
             private @PlayerActions m_Wrapper;
             public BirdActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Jump => m_Wrapper.m_Bird_Jump;
+            public InputAction @Flap => m_Wrapper.m_Bird_Flap;
             public InputActionMap Get() { return m_Wrapper.m_Bird; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -683,16 +683,16 @@ namespace FlappyBirdClone.Input
             {
                 if (m_Wrapper.m_BirdActionsCallbackInterface != null)
                 {
-                    @Jump.started -= m_Wrapper.m_BirdActionsCallbackInterface.OnJump;
-                    @Jump.performed -= m_Wrapper.m_BirdActionsCallbackInterface.OnJump;
-                    @Jump.canceled -= m_Wrapper.m_BirdActionsCallbackInterface.OnJump;
+                    @Flap.started -= m_Wrapper.m_BirdActionsCallbackInterface.OnFlap;
+                    @Flap.performed -= m_Wrapper.m_BirdActionsCallbackInterface.OnFlap;
+                    @Flap.canceled -= m_Wrapper.m_BirdActionsCallbackInterface.OnFlap;
                 }
                 m_Wrapper.m_BirdActionsCallbackInterface = instance;
                 if (instance != null)
                 {
-                    @Jump.started += instance.OnJump;
-                    @Jump.performed += instance.OnJump;
-                    @Jump.canceled += instance.OnJump;
+                    @Flap.started += instance.OnFlap;
+                    @Flap.performed += instance.OnFlap;
+                    @Flap.canceled += instance.OnFlap;
                 }
             }
         }
@@ -804,7 +804,7 @@ namespace FlappyBirdClone.Input
         public UIActions @UI => new UIActions(this);
         public interface IBirdActions
         {
-            void OnJump(InputAction.CallbackContext context);
+            void OnFlap(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {

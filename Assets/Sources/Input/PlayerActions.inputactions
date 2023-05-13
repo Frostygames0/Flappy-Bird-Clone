@@ -6,7 +6,7 @@
             "id": "b5432db3-13b2-4d42-bbc4-8cf7ac08a5c9",
             "actions": [
                 {
-                    "name": "Jump",
+                    "name": "Flap",
                     "type": "Button",
                     "id": "15d2ea6f-24a0-4d76-9ea2-09967d8a4374",
                     "expectedControlType": "Button",
@@ -23,7 +23,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "Flap",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -34,7 +34,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "Flap",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -45,7 +45,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Jump",
+                    "action": "Flap",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

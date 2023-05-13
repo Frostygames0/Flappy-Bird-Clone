@@ -11,8 +11,8 @@ namespace FlappyBirdClone.Player
 
         public void Crash()
         {
-            gameObject.SetActive(false);
             Crashed?.Invoke();
+            gameObject.SetActive(false);
         }
 
         private void OnTriggerEnter2D(Collider2D col)
