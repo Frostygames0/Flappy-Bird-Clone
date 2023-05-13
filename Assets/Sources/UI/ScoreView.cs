@@ -1,8 +1,8 @@
-﻿using FlappyBirdClone.UI;
+﻿using FlappyBirdClone.Player;
 using TMPro;
 using UnityEngine;
 
-namespace FlappyBirdClone.Player
+namespace FlappyBirdClone.UI
 {
     public class ScoreView : MonoBehaviour
     {
