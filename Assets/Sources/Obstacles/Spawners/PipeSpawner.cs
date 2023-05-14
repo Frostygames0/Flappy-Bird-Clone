@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace FlappyBirdClone.Obstacles.Spawners
 {
+    // TODO Use object pool
     public class PipeSpawner : MonoBehaviour
     {
         [SerializeField] private PipeFactory _pipeFactory;
