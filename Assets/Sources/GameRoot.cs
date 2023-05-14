@@ -3,6 +3,7 @@ using FlappyBirdClone.Player;
 using FlappyBirdClone.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 namespace FlappyBirdClone
 {
@@ -12,8 +13,8 @@ namespace FlappyBirdClone
         [SerializeField] private Score _score;
         [SerializeField] private PipeSpawner _pipeSpawner;
 
-        [SerializeField] private ScoreView _scoreView;
-        [SerializeField] private LosingMessageView _losingMessageView;
+        [SerializeField] private ScorePresenter _scorePresenter;
+        [SerializeField] private LosingMessage _losingMessage;
 
         private void OnEnable()
         {
@@ -31,10 +32,10 @@ namespace FlappyBirdClone
         
         private void OnCrashed()
         {
-            _scoreView.Hide();
+            _scorePresenter.Hide();
             _pipeSpawner.StopSpawn();
             
-            _losingMessageView.Show(_score.Total,
+            _losingMessage.Show(_score.Total,
                 () =>
                 {
 #if UNITY_EDITOR

@@ -284,7 +284,7 @@ Transform:
   - {fileID: 1733200363}
   - {fileID: 1836436458}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832084790
 GameObject:
@@ -446,7 +446,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1381771311
 GameObject:
@@ -481,7 +481,7 @@ MonoBehaviour:
   _pipeFactory: {fileID: 1381771315}
   _minHeight: -3
   _maxHeight: 3
-  _spawnInterval: 2
+  _spawnInterval: 1.5
 --- !u!4 &1381771314
 Transform:
   m_ObjectHideFlags: 0
@@ -495,7 +495,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1381771315
 MonoBehaviour:
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: 3125221322376659453, guid: 15a60a552830a8b43bb03f924ed61aa4, type: 3}
-  _speed: 2
+  _speed: 3
 --- !u!1 &1397911503
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,8 +644,8 @@ MonoBehaviour:
   _bird: {fileID: 175499644}
   _score: {fileID: 1230643713}
   _pipeSpawner: {fileID: 1381771312}
-  _scoreView: {fileID: 1630037872}
-  _losingMessageView: {fileID: 220889870}
+  _scorePresenter: {fileID: 1630037872}
+  _losingMessage: {fileID: 220889870}
 --- !u!4 &1506093989
 Transform:
   m_ObjectHideFlags: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 1733200366}
   _movement: {x: 1, y: 0}
-  _speed: 2
+  _speed: 3
 --- !u!61 &1733200365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1178,7 +1178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4671836952452773948, guid: 9bd29bfd7b78b4445bdada467170e6ac, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4671836952452773948, guid: 9bd29bfd7b78b4445bdada467170e6ac, type: 3}
       propertyPath: m_LocalPosition.x

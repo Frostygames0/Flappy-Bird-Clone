@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace FlappyBirdClone.UI
 {
-    public class ScoreView : MonoBehaviour
+    public class ScorePresenter : MonoBehaviour
     {
         [SerializeField] private Score _score;
         [SerializeField] private TMP_Text _text;
@@ -22,8 +22,6 @@ namespace FlappyBirdClone.UI
             => _score.Changed -= OnChanged;
 
         private void OnChanged(int newScore)
-        {
-            _text.SetText(newScore.ToString());
-        }
+            => _text.SetText(newScore.ToString());
     }
 }

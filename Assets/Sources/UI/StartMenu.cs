@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace FlappyBirdClone.UI
 {
-    public class StartMenuView : MonoBehaviour
+    public class StartMenu : MonoBehaviour
     {
         [SerializeField] private Button _startButton;
         
@@ -15,8 +15,6 @@ namespace FlappyBirdClone.UI
             => _startButton.onClick.RemoveListener(OnClick);
 
         private void OnClick()
-        {
-            SceneManager.LoadScene(SceneConstants.GameScene);
-        }
+            =>SceneManager.LoadScene(SceneConstants.GameScene);
     }
 }
