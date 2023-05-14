@@ -14,13 +14,6 @@ namespace FlappyBirdClone
 
         [SerializeField] private ScorePresenter _scorePresenter;
         [SerializeField] private LosingMessage _losingMessage;
-        
-        [SerializeField] private int _androidFrameRate;
-        
-#if UNITY_ANDROID
-        private void Start()
-            => Application.targetFrameRate = _androidFrameRate;
-#endif
 
         private void OnEnable()
         {
