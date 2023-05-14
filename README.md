@@ -1,6 +1,5 @@
 # Flappy Bird Clone
-Simple Flappy Bird clone. I made it in several hours (total time, more or less)
-No menu, no medals, only a bird that can jump, pipes that move and a score
+A simple Flappy Bird clone. I made it in several hours (total time, more or less)
 It doesn't even look like an original Flappy Bird!
 
 You can use it as a template if you want to make your own Flappy Bird!
