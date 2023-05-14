@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 4671836952160856718}
   - component: {fileID: 4671836952160856716}
   - component: {fileID: 4671836952160856717}
-  - component: {fileID: 4671836952160856722}
   - component: {fileID: 492464520846013318}
+  - component: {fileID: 5757058053825133795}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -192,22 +192,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &4671836952160856722
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4671836952160856713}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.05}
-  m_Size: {x: 1.0000001, y: 0.8}
-  m_Direction: 1
 --- !u!114 &492464520846013318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +206,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 4671836952160856717}
   _flapAnimation: Flap
+--- !u!60 &5757058053825133795
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671836952160856713}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.12466228, y: -0.06316787}
+      - {x: -0.31098318, y: -0.06298995}
+      - {x: -0.49876904, y: -0.12359947}
+      - {x: -0.5, y: -0.30525672}
+      - {x: -0.37989247, y: -0.43736923}
+      - {x: 0.1226815, y: -0.43583727}
+      - {x: 0.1886555, y: -0.37412596}
+      - {x: 0.24997306, y: -0.31313026}
+      - {x: 0.43706167, y: -0.24877238}
+      - {x: 0.50038755, y: -0.187554}
+      - {x: 0.49928474, y: -0.065467596}
+      - {x: 0.4375211, y: -0.0015112162}
+      - {x: 0.37724382, y: 0.00044888258}
+      - {x: 0.37585068, y: 0.1858682}
+      - {x: 0.24908352, y: 0.31143248}
+      - {x: 0.0006775856, y: 0.31051695}
+      - {x: -0.123319626, y: 0.18663591}
 --- !u!1 &4671836952452773947
 GameObject:
   m_ObjectHideFlags: 0
