@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using FlappyBirdClone.Obstacles.Factory;
 using UnityEngine;
-using Random = UnityEngine.Random;
-
 
 namespace FlappyBirdClone.Obstacles.Spawners
 {

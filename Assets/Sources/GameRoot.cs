@@ -3,7 +3,6 @@ using FlappyBirdClone.Player;
 using FlappyBirdClone.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 namespace FlappyBirdClone
 {
