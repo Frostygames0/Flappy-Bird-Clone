@@ -1224,6 +1224,10 @@ PrefabInstance:
       propertyPath: _source
       value: 
       objectReference: {fileID: 1506093990}
+    - target: {fileID: 4671836952452774082, guid: 9bd29bfd7b78b4445bdada467170e6ac, type: 3}
+      propertyPath: _jumpAnimation
+      value: Flap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bd29bfd7b78b4445bdada467170e6ac, type: 3}
 --- !u!1001 &9044642859400712413

@@ -319,7 +319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _birdMovement: {fileID: 4671836952452773945}
   _animator: {fileID: 4671836952160856717}
-  _jumpAnimation: Flap
+  _flapAnimation: Flap
 --- !u!114 &4671836952452774080
 MonoBehaviour:
   m_ObjectHideFlags: 0

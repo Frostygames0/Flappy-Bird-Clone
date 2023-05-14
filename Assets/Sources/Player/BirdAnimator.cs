@@ -7,7 +7,7 @@ namespace FlappyBirdClone.Player
         [SerializeField] private BirdMovement _birdMovement;
         
         [SerializeField] private Animator _animator;
-        [SerializeField] private string _jumpAnimation;
+        [SerializeField] private string _flapAnimation;
 
         private void OnEnable()
             => _birdMovement.Flapped += PerformFlapAnimation;
@@ -16,7 +16,7 @@ namespace FlappyBirdClone.Player
             => _birdMovement.Flapped -= PerformFlapAnimation;
 
         private void PerformFlapAnimation()
-            => _animator.Play(_jumpAnimation);
+            => _animator.Play(_flapAnimation);
         
     }
 }
