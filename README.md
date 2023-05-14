@@ -4,5 +4,5 @@ No menu, no medals, only a bird that can jump, pipes that move and a score
 It doesn't even look like an original Flappy Bird!
 
 # Screenshots
-![screenshot](https://github.com/Frostygames0/Flappy-Bird-Clone/assets/39121739/6d447fbd-cfbd-4518-8862-b7911fc16f4e)
-![screenshot2](https://github.com/Frostygames0/Flappy-Bird-Clone/assets/39121739/2e2d42e6-3c1f-4957-9a27-e4dfe14eba41)
+![screenshot2](https://github.com/Frostygames0/Flappy-Bird-Clone/assets/39121739/50ead016-2990-4525-8eef-5949af69f5cf)
+![screenshot](https://github.com/Frostygames0/Flappy-Bird-Clone/assets/39121739/fbd19975-a40a-41f0-aa9b-d32f4c9988f5)
